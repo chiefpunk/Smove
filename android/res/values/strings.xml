@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources> 
+    <string name="app_name">Simple Swipe</string> 
+   
+    <string name="admob_publisher_id">ca-app-pub-0000000000000000/0000000000</string>
+    <string name="admob_interstitial_publisher_id">ca-app-pub-0000000000000000/0000000000</string>
+       
+</resources>

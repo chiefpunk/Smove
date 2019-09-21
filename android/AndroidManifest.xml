@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="gruv.game.smove.android"
+    android:versionCode="130"
+    android:versionName="1.3.0"
+    android:installLocation="preferExternal" >
+
+    <uses-sdk 
+        android:minSdkVersion="14" 
+        android:targetSdkVersion="24" />
+    
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>      
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />    
+   
+    <uses-feature    
+          android:name="android.hardware.sensor.accelerometer"    
+          android:required="true"
+          android:glEsVersion="0x00020000" />  
+          
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:hardwareAccelerated="false">
+        
+        <meta-data android:name="com.google.android.gms.version"
+               android:value="@integer/google_play_services_version"/> 
+        
+        <activity
+            android:name="gruv.game.smove.android.AndroidLauncher"
+            android:label="@string/app_name" 
+            android:screenOrientation="portrait"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name="com.google.android.gms.ads.AdActivity"
+             android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"/>
+                
+    </application>
+
+</manifest>
